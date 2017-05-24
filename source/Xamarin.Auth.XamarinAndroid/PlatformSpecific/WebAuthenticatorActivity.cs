@@ -27,7 +27,7 @@ namespace Xamarin.Auth
 {
     [Activity(Label = "Web Authenticator")]
 #if XAMARIN_AUTH_INTERNAL
-	internal class WebAuthenticatorActivity : Activity
+	internal partial class WebAuthenticatorActivity : global::Android.Accounts.AccountAuthenticatorActivity
 #else
     /// Pull Request - manually added/fixed
     ///		Marshalled NavigationService.GoBack to UI Thread #94

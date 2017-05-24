@@ -27,9 +27,9 @@ namespace Xamarin.Auth
 	/// returns an account with the fragment on that URL.
 	/// </summary>
 #if XAMARIN_AUTH_INTERNAL
-	internal class WebRedirectAuthenticator : WebAuthenticator
+	internal partial class WebRedirectAuthenticator : WebAuthenticator
 #else
-	public partial class WebRedirectAuthenticator : WebAuthenticator
+    public partial class WebRedirectAuthenticator : WebAuthenticator
 #endif
 	{
 		protected override AuthenticateUIType GetPlatformUI ()

@@ -22,11 +22,10 @@ namespace Xamarin.Auth
 	/// A persistent storage for <see cref="Account"/>s. This storage is encrypted.
 	/// Accounts are stored using a service ID and the username of the account
 	/// as a primary key.
-	/// </summary>
-	#if XAMARIN_AUTH_INTERNAL
-	internal abstract class AccountStore
-	#else
-	public abstract partial class AccountStore
+#if XAMARIN_AUTH_INTERNAL
+	internal abstract partial class AccountStore
+#else
+    public abstract partial class AccountStore
 	#endif
 	{
 		/// <summary>

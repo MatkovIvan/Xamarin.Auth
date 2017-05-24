@@ -25,7 +25,11 @@ using System.Text;
 
 namespace Xamarin.Auth
 {
+#if XAMARIN_AUTH_INTERNAL
+    internal partial class WebAuthenticatorActivity
+#else
     public partial class WebAuthenticatorActivity
+#endif
     {
         class Client : WebViewClient
         {
