@@ -7,17 +7,17 @@ using Xamarin.Forms.Platform.Android;
 [assembly:
     ExportRenderer
         (
-            typeof(Xamarin.Auth.XamarinForms.AuthenticatorPage),
-            typeof(Xamarin.Auth.XamarinForms.XamarinAndroid.AuthenticatorPageRenderer)
+            typeof(Xamarin.Auth._MobileServices.XamarinForms.AuthenticatorPage),
+            typeof(Xamarin.Auth._MobileServices.XamarinForms.XamarinAndroid.AuthenticatorPageRenderer)
         )
 ]
-namespace Xamarin.Auth.XamarinForms.XamarinAndroid
+namespace Xamarin.Auth._MobileServices.XamarinForms.XamarinAndroid
 {
     [global::Android.Runtime.Preserve(AllMembers = true)]
     public class AuthenticatorPageRenderer : Xamarin.Forms.Platform.Android.PageRenderer
     {
-        protected Xamarin.Auth.Authenticator Authenticator = null;
-        protected Xamarin.Auth.XamarinForms.AuthenticatorPage authenticator_page = null;
+        protected Xamarin.Auth._MobileServices.Authenticator Authenticator = null;
+        protected Xamarin.Auth._MobileServices.XamarinForms.AuthenticatorPage authenticator_page = null;
 
         protected override void OnElementChanged(ElementChangedEventArgs<Page> e)
         {

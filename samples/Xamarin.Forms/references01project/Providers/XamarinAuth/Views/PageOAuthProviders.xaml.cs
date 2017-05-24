@@ -6,7 +6,7 @@ using System.Linq;
 using Xamarin.Forms;
 
 using Xamarin.Auth;
-using Xamarin.Auth.XamarinForms;
+using Xamarin.Auth._MobileServices.XamarinForms;
 
 using Xamarin.Auth.SampleData;
 

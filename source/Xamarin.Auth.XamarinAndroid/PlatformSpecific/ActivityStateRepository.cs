@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Xamarin.Utilities.Android
+namespace Xamarin.Utilities._MobileServices.Android
 {
     /// <summary>
     /// Object to make passing non serializable objects to Activities easier

@@ -23,7 +23,7 @@ using Android.App;
 using Android.Net.Http;
 using Android.Webkit;
 
-using Xamarin.Utilities.Android;
+using Xamarin.Utilities._MobileServices.Android;
 using Android.Support.CustomTabs;
 using System.Runtime.Remoting.Contexts;
 using System.Linq;

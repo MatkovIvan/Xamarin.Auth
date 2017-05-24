@@ -67,7 +67,7 @@ namespace Samples.NativeUI
             // ContentPage with CustomRenderers
             Navigation.PushAsync
                     (
-                        new Xamarin.Auth.XamarinForms.AuthenticatorPage()
+                        new Xamarin.Auth._MobileServices.XamarinForms.AuthenticatorPage()
                         {
                             Authenticator  = authenticator,
                         }

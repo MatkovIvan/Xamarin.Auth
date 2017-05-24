@@ -20,7 +20,7 @@ using Android.Net.Http;
 using Android.Webkit;
 using Android.OS;
 using System.Threading.Tasks;
-using Xamarin.Utilities.Android;
+using Xamarin.Utilities._MobileServices.Android;
 using System.Text;
 
 namespace Xamarin.Auth._MobileServices

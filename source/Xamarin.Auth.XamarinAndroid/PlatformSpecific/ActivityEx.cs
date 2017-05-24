@@ -2,7 +2,7 @@ using System;
 using Android.App;
 using Android.Views;
 
-namespace Xamarin.Utilities.Android
+namespace Xamarin.Utilities._MobileServices.Android
 {
     public static class ActivityEx
     {

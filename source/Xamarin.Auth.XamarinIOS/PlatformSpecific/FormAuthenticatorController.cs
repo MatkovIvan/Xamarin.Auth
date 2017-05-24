@@ -27,7 +27,7 @@ using UIKit;
 using Foundation;
 #endif
 using Xamarin.Controls;
-using Xamarin.Utilities.iOS;
+using Xamarin.Utilities._MobileServices.iOS;
 
 namespace Xamarin.Auth._MobileServices
 {

@@ -12,8 +12,8 @@ using Android.Views;
 using Android.Widget;
 
 //using Xamarin.Auth;
-//using Xamarin.Auth.XamarinForms;
-//using Xamarin.Auth.XamarinForms.XamarinAndroid;
+//using Xamarin.Auth._MobileServices.XamarinForms;
+//using Xamarin.Auth._MobileServices.XamarinForms.XamarinAndroid;
 
 namespace Samples.NativeUI.Droid
 {

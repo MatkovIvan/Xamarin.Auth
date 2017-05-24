@@ -7,11 +7,11 @@ using Xamarin.Forms.Platform.WinRT;
 [assembly:
     ExportRenderer
         (
-            typeof(Xamarin.Auth.XamarinForms.AuthenticatorPage),
-            typeof(Xamarin.Auth.XamarinForms.WinRT.AuthenticatorPageRenderer)
+            typeof(Xamarin.Auth._MobileServices.XamarinForms.AuthenticatorPage),
+            typeof(Xamarin.Auth._MobileServices.XamarinForms.WinRT.AuthenticatorPageRenderer)
         )
 ]
-namespace Xamarin.Auth.XamarinForms.WinRT
+namespace Xamarin.Auth._MobileServices.XamarinForms.WinRT
 {
     public class AuthenticatorPageRenderer : Xamarin.Forms.Platform.WinRT.PageRenderer
     {

@@ -23,7 +23,7 @@ using Android.App;
 using Android.OS;
 using Android.Widget;
 using Android.Util;
-using Xamarin.Utilities.Android;
+using Xamarin.Utilities._MobileServices.Android;
 using Android.Text;
 
 namespace Xamarin.Auth._MobileServices

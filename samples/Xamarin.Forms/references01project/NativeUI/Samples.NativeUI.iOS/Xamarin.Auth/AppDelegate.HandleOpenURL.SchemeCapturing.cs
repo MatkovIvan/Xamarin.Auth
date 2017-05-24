@@ -73,7 +73,7 @@ namespace Samples.NativeUI.iOS
 
             WebRedirectAuthenticator wre = null;
             wre = (WebRedirectAuthenticator)
-                        global::Xamarin.Auth.XamarinForms.XamarinIOS.
+                        global::Xamarin.Auth._MobileServices.XamarinForms.XamarinIOS.
                                AuthenticatorPageRenderer.Authenticator;
 
             // load redirect_url Page

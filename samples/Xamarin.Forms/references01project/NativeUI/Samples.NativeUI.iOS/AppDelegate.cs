@@ -25,9 +25,9 @@ namespace Samples.NativeUI.iOS
             global::Xamarin.Forms.Forms.Init();
             /*
             global::Xamarin.Forms
-                           .DependencyService.Register<global::Xamarin.Auth.XamarinForms.AuthenticatorPage>();
-            global::Xamarin.Auth.XamarinForms.AuthenticatorPage ap = null;
-            ap = new global::Xamarin.Auth.XamarinForms.AuthenticatorPage();
+                           .DependencyService.Register<global::Xamarin.Auth._MobileServices.XamarinForms.AuthenticatorPage>();
+            global::Xamarin.Auth._MobileServices.XamarinForms.AuthenticatorPage ap = null;
+            ap = new global::Xamarin.Auth._MobileServices.XamarinForms.AuthenticatorPage();
             */
 
             LoadApplication(new App());

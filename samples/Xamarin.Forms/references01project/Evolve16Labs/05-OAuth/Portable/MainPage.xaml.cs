@@ -7,7 +7,7 @@ using Newtonsoft.Json.Linq;
 using System.Threading.Tasks;
 using ComicBookPCL;
 using System.Text;
-using Xamarin.Auth.XamarinForms;
+using Xamarin.Auth._MobileServices.XamarinForms;
 
 namespace ComicBook
 {
@@ -73,7 +73,7 @@ namespace ComicBook
             if (forms_implementation_renderers)
             {
                 // Renderers Implementaion
-                //Navigation.PushModalAsync(new Xamarin.Auth.XamarinForms.AuthenticatorPage());
+                //Navigation.PushModalAsync(new Xamarin.Auth._MobileServices.XamarinForms.AuthenticatorPage());
             }
             else
             {
@@ -108,7 +108,7 @@ namespace ComicBook
             if (forms_implementation_renderers)
             {
                 // Renderers Implementaion
-                //Navigation.PushModalAsync(new Xamarin.Auth.XamarinForms.AuthenticatorPage());
+                //Navigation.PushModalAsync(new Xamarin.Auth._MobileServices.XamarinForms.AuthenticatorPage());
             }
             else
             {
@@ -485,7 +485,7 @@ namespace ComicBook
             if (forms_implementation_renderers)
             {
                 // Renderers Implementaion
-                Navigation.PushModalAsync(new Xamarin.Auth.XamarinForms.AuthenticatorPage());
+                Navigation.PushModalAsync(new Xamarin.Auth._MobileServices.XamarinForms.AuthenticatorPage());
             }
             else
             {

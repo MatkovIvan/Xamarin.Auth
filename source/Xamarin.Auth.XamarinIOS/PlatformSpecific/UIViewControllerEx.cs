@@ -23,7 +23,7 @@ using Foundation;
 using UIKit;
 #endif
 
-namespace Xamarin.Utilities.iOS
+namespace Xamarin.Utilities._MobileServices.iOS
 {
     public static class UIViewControllerEx
     {

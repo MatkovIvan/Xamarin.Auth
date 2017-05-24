@@ -17,7 +17,7 @@ using System;
 using System.Threading.Tasks;
 using System.Text;
 
-using Xamarin.Utilities.iOS;
+using Xamarin.Utilities._MobileServices.iOS;
 using Xamarin.Controls;
 using System.Collections.Generic;
 
@@ -110,7 +110,7 @@ namespace Xamarin.Auth._MobileServices
                         fragment.Contains("error")
                     )
                 {
-                    IDictionary<string, string> fragments = Utilities.WebEx.FormDecode(uri.Fragment);
+                    IDictionary<string, string> fragments = Utilities._MobileServices.WebEx.FormDecode(uri.Fragment);
 
                     Account account = new Account
                                             (
@@ -176,7 +176,7 @@ namespace Xamarin.Auth._MobileServices
                     // NSUrl url_ios = webView.Url; // old URL
                     string url_redirect = error.UserInfo[new NSString("NSErrorFailingURLKey")].ToString();
                     System.Uri uri = new Uri(url_redirect);
-                    IDictionary<string, string> fragment = Utilities.WebEx.FormDecode(uri.Fragment);
+                    IDictionary<string, string> fragment = Utilities._MobileServices.WebEx.FormDecode(uri.Fragment);
 
                     Account account = new Account
                                             (

@@ -23,7 +23,7 @@ using System.Linq;
 using System.Globalization;
 using System.Json;
 
-namespace Xamarin.Utilities
+namespace Xamarin.Utilities._MobileServices
 {
     public static class WebEx
     {

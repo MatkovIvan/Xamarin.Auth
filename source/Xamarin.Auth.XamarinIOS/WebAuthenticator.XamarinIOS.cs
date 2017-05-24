@@ -47,7 +47,7 @@ namespace Xamarin.Auth._MobileServices
             if (this.IsUsingNativeUI == true)
             {
                 Uri uri = GetInitialUrlAsync().Result;
-                IDictionary<string, string> query_parts = Utilities.WebEx.FormDecode(uri.Query);
+                IDictionary<string, string> query_parts = Utilities._MobileServices.WebEx.FormDecode(uri.Query);
                 Uri redirect_uri = new Uri(query_parts["redirect_uri"]);
                 string scheme = redirect_uri.Scheme;
                 if (scheme.StartsWith("http", StringComparison.InvariantCultureIgnoreCase))

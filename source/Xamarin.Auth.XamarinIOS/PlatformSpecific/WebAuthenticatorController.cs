@@ -17,7 +17,7 @@ using System;
 using System.Threading.Tasks;
 using System.Text;
 
-using Xamarin.Utilities.iOS;
+using Xamarin.Utilities._MobileServices.iOS;
 using Xamarin.Controls;
 
 #if !__UNIFIED__

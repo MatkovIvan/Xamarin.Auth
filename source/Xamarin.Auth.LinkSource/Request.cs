@@ -23,7 +23,7 @@ using System.Threading.Tasks;
 using System.Linq;
 using System.Text;
 using System.Threading;
-using Xamarin.Utilities;
+using Xamarin.Utilities._MobileServices;
 
 namespace Xamarin.Auth._MobileServices
 {

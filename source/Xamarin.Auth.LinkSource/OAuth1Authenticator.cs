@@ -19,7 +19,7 @@ using System.Net;
 using System.Collections.Generic;
 using System.Text;
 
-using Xamarin.Utilities;
+using Xamarin.Utilities._MobileServices;
 
 namespace Xamarin.Auth._MobileServices
 {

@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Xamarin.Auth.XamarinForms")]
+[assembly: AssemblyTitle("Xamarin.Auth._MobileServices.XamarinForms")]
 [assembly: AssemblyDescription("Xamarin.Auth Xamarin.Forms support")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Xamarin / Mirosoft")]
-[assembly: AssemblyProduct("Xamarin.Auth.XamarinForms")]
+[assembly: AssemblyProduct("Xamarin.Auth._MobileServices.XamarinForms")]
 [assembly: AssemblyCopyright("Copyright ©  2014-2017")]
 [assembly: AssemblyTrademark("Xamarin/Microsoft Xamarin.Auth")]
 [assembly: AssemblyCulture("")]

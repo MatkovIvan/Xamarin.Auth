@@ -19,7 +19,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Linq;
 using System.Collections.Generic;
-using Xamarin.Utilities;
+using Xamarin.Utilities._MobileServices;
 using System.Net;
 using System.Text;
 

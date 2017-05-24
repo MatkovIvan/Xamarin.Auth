@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Xamarin.Utilities;
+using Xamarin.Utilities._MobileServices;
 
 namespace Xamarin.Auth._MobileServices
 {
@@ -33,26 +33,26 @@ namespace Xamarin.Auth._MobileServices
         /// </value>
         public Exception Exception { get; private set; }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Xamarin.Auth.AuthenticatorErrorEventArgs"/> class
-        /// with a message but no exception.
-        /// </summary>
-        /// <param name='message'>
-        /// A message describing the error.
-        /// </param>
-        public AuthenticatorErrorEventArgs(string message)
+		/// <summary>
+		/// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.AuthenticatorErrorEventArgs"/> class
+		/// with a message but no exception.
+		/// </summary>
+		/// <param name='message'>
+		/// A message describing the error.
+		/// </param>
+		public AuthenticatorErrorEventArgs(string message)
         {
             Message = message;
         }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Xamarin.Auth.AuthenticatorErrorEventArgs"/> class with an exception.
-        /// </summary>
-        /// <param name='exception'>
-        /// The exception signaling the error. The message of this object is retrieved from this exception or
-        /// its inner exceptions.
-        /// </param>
-        public AuthenticatorErrorEventArgs(Exception exception)
+		/// <summary>
+		/// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.AuthenticatorErrorEventArgs"/> class with an exception.
+		/// </summary>
+		/// <param name='exception'>
+		/// The exception signaling the error. The message of this object is retrieved from this exception or
+		/// its inner exceptions.
+		/// </param>
+		public AuthenticatorErrorEventArgs(Exception exception)
         {
             Message = exception.GetUserMessage();
             Exception = exception;
