@@ -6,9 +6,14 @@ using SafariServices;
 
 namespace Xamarin.Auth//.SafariServices
 {
-	public partial class NativeAuthSafariViewControllerDelegate 
+#if XAMARIN_AUTH_INTERNAL
+    internal partial class NativeAuthSafariViewControllerDelegate
+#else
+    public partial class NativeAuthSafariViewControllerDelegate 
+#endif
         :
-			global::SafariServices.SFSafariViewControllerDelegate
+
+            global::SafariServices.SFSafariViewControllerDelegate
             // to mimic SFSafariViewController
             //UIKit.UIViewController,
             //global::SafariServices.ISFSafariViewControllerDelegate
