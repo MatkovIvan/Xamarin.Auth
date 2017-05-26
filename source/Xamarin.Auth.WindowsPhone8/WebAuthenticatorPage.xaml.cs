@@ -20,7 +20,7 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 
-namespace Xamarin.Auth.WindowsPhone
+namespace Xamarin.Auth._MobileServices.WindowsPhone
 {
     public partial class WebAuthenticatorPage : PhoneApplicationPage
     {

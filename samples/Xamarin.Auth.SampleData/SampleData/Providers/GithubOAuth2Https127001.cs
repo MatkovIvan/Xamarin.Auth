@@ -1,9 +1,9 @@
 ﻿using System;
-using Xamarin.Auth.Helpers;
+using Xamarin.Auth._MobileServices.Helpers;
 
-namespace Xamarin.Auth.SampleData
+namespace Xamarin.Auth._MobileServices.SampleData
 {
-    public partial class GithubOAuth2Https127001 : Xamarin.Auth.Helpers.OAuth2
+    public partial class GithubOAuth2Https127001 : Xamarin.Auth._MobileServices.Helpers.OAuth2
     {
         partial void SetPublicNonSensitiveData();
         partial void SetPrivateSensitiveData();

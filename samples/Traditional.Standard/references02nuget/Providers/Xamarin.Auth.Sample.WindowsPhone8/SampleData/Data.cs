@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using Xamarin.Auth.Helpers;
+using Xamarin.Auth._MobileServices.Helpers;
 
-namespace Xamarin.Auth.SampleData
+namespace Xamarin.Auth._MobileServices.SampleData
 {
 	/// <summary>
 	///		Google:		OAuth2
@@ -35,9 +35,9 @@ namespace Xamarin.Auth.SampleData
 	{
 		public static Dictionary<string, OAuth> TestCases = null;
 
-		protected static Xamarin.Auth.Helpers.OAuth oauth = null;
-		protected static Xamarin.Auth.Helpers.OAuth1 oauth1 = null;
-		protected static Xamarin.Auth.Helpers.OAuth2 oauth2 = null;
+		protected static Xamarin.Auth._MobileServices.Helpers.OAuth oauth = null;
+		protected static Xamarin.Auth._MobileServices.Helpers.OAuth1 oauth1 = null;
+		protected static Xamarin.Auth._MobileServices.Helpers.OAuth2 oauth2 = null;
 
 		//---------------------------------------------------------------------------------
 		// methods implemented in other file which is included in project through wildcard

@@ -1,13 +1,13 @@
 ﻿using System;
-using Xamarin.Auth.Helpers;
+using Xamarin.Auth._MobileServices.Helpers;
 
-namespace Xamarin.Auth.SampleData
+namespace Xamarin.Auth._MobileServices.SampleData
 {
 	public partial class Data 
 	{
 		static partial void SetPublicDemoDataInstagramOAuth2()
 		{
-			oauth2 = new Xamarin.Auth.Helpers.OAuth2()
+			oauth2 = new Xamarin.Auth._MobileServices.Helpers.OAuth2()
 			{
 				Description = "Instagram OAuth2",
 				OAuth_IdApplication_IdAPI_KeyAPI_IdClient_IdCustomer = "",

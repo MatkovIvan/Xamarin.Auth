@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Xamarin.Auth.SampleData
+namespace Xamarin.Auth._MobileServices.SampleData
 {
-	public partial class StackoverflowOAuth2Implicit : Xamarin.Auth.Helpers.OAuth2
+	public partial class StackoverflowOAuth2Implicit : Xamarin.Auth._MobileServices.Helpers.OAuth2
 	{
 		partial void SetPublicNonSensitiveData();
 		partial void SetPrivateSensitiveData();

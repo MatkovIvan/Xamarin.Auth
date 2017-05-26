@@ -21,10 +21,10 @@ using Xamarin.Utilities;
 
 using AuthenticateUIType = System.Object;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 #if XAMARIN_AUTH_INTERNAL
-	internal class partial OAuth1Authenticator : WebAuthenticator
+	internal partial class OAuth1Authenticator : WebAuthenticator
 #else
 	public partial class OAuth1Authenticator : WebAuthenticator
 #endif

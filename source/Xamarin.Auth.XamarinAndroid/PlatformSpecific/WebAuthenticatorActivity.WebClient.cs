@@ -25,7 +25,11 @@ using System.Text;
 
 namespace Xamarin.Auth._MobileServices
 {
+#if XAMARIN_AUTH_INTERNAL
+    internal partial class WebAuthenticatorActivity
+#else
     public partial class WebAuthenticatorActivity
+#endif
     {
         class Client : WebViewClient
         {
@@ -54,7 +58,7 @@ namespace Xamarin.Auth._MobileServices
                 activity.state.Authenticator.Scheme = scheme;
 
                 StringBuilder sb = new StringBuilder();
-                sb.Append("Xamarin.Auth.Android.WebAuthenticatorActivity").AppendLine("");
+                sb.Append("Xamarin.Auth._MobileServices.Android.WebAuthenticatorActivity").AppendLine("");
                 sb.Append("             Scheme = ").AppendLine(scheme);
                 sb.Append("             Host   = ").AppendLine(host);
                 System.Diagnostics.Debug.WriteLine(sb.ToString());

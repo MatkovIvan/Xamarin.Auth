@@ -20,16 +20,16 @@ using Xamarin.Utilities;
 
 using AuthenticateUIType = System.Object;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	/// <summary>
 	/// An authenticator that displays web pages until a given "redirect" page is encountered. It then
 	/// returns an account with the fragment on that URL.
 	/// </summary>
 #if XAMARIN_AUTH_INTERNAL
-	internal class WebRedirectAuthenticator : WebAuthenticator
+	internal partial class WebRedirectAuthenticator : WebAuthenticator
 #else
-	public partial class WebRedirectAuthenticator : WebAuthenticator
+    public partial class WebRedirectAuthenticator : WebAuthenticator
 #endif
 	{
 		protected override AuthenticateUIType GetPlatformUI ()

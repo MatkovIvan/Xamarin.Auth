@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Xamarin.Auth.Helpers;
+using Xamarin.Auth._MobileServices.Helpers;
 
-namespace Xamarin.Auth.SampleData
+namespace Xamarin.Auth._MobileServices.SampleData
 {
 	public partial class Data 
 	{
 		static partial void SetPublicDemoDataFacebookOAuth2()
 		{
-			oauth2 = new Xamarin.Auth.Helpers.OAuth2()
+			oauth2 = new Xamarin.Auth._MobileServices.Helpers.OAuth2()
 			{
 				Description = "Facebook OAuth2",
 				OAuth_IdApplication_IdAPI_KeyAPI_IdClient_IdCustomer = "",

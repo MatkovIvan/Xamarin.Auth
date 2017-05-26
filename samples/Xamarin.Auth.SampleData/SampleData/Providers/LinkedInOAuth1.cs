@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Xamarin.Auth.SampleData
+namespace Xamarin.Auth._MobileServices.SampleData
 {
-	public partial class LinkedInOAuth1 : Xamarin.Auth.Helpers.OAuth1
+	public partial class LinkedInOAuth1 : Xamarin.Auth._MobileServices.Helpers.OAuth1
 	{
 		partial void SetPublicNonSensitiveData();
 		partial void SetPrivateSensitiveData();

@@ -1,7 +1,7 @@
 using System;
-using Xamarin.Auth.Helpers;
+using Xamarin.Auth._MobileServices.Helpers;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	public partial class AuthenticationResult
 	{

@@ -6,7 +6,7 @@ using LeanKit.UI.Application;
 using TinyIoC;
 using UIKit;
 
-namespace Xamarin.Auth.ANE.iOS
+namespace Xamarin.Auth._MobileServices.ANE.iOS
 {
 	[Register("AppDelegate")]
 	public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate

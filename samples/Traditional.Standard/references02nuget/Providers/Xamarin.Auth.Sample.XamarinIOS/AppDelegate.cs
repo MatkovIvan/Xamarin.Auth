@@ -10,7 +10,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 #endif
 
-namespace Xamarin.Auth.Sample.XamarinIOS
+namespace Xamarin.Auth._MobileServices.Sample.XamarinIOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the
     // User Interface of the application, as well as listening (and optionally responding) to

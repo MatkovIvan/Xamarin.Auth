@@ -6,9 +6,9 @@ using System.Windows.Markup;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-using Xamarin.Auth.Sample.Resources;
+using Xamarin.Auth._MobileServices.Sample.Resources;
 
-namespace Xamarin.Auth.Sample
+namespace Xamarin.Auth._MobileServices.Sample
 {
     public partial class App : Application
     {

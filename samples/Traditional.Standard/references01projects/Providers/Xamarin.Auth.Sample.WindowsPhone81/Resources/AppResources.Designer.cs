@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Xamarin.Auth.Sample.Resources {
+namespace Xamarin.Auth._MobileServices.Sample.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Xamarin.Auth.Sample.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Xamarin.Auth.Sample.Resources.AppResources", typeof(AppResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Xamarin.Auth._MobileServices.Sample.Resources.AppResources", typeof(AppResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

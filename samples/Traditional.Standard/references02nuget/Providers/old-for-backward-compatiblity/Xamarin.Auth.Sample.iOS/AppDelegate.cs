@@ -8,7 +8,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using MonoTouch.Dialog;
 
-namespace Xamarin.Auth.Sample.iOS
+namespace Xamarin.Auth._MobileServices.Sample.iOS
 {
 	[Register ("AppDelegate")]
 	public partial class AppDelegate : UIApplicationDelegate

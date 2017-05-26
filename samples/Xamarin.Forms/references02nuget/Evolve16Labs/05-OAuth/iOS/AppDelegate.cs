@@ -13,7 +13,7 @@ namespace ComicBook.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            global::Xamarin.Auth.Presenters.XamarinIOS.AuthenticationConfiguration.Init();
+            global::Xamarin.Auth._MobileServices.Presenters.XamarinIOS.AuthenticationConfiguration.Init();
 
             LoadApplication(new App());
 

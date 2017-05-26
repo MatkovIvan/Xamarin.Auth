@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Xamarin.Auth.SampleData
+namespace Xamarin.Auth._MobileServices.SampleData
 {
-	public partial class FiveHundredPx500PxOAuth1CustomSchemeLocalhost : Xamarin.Auth.Helpers.OAuth1
+	public partial class FiveHundredPx500PxOAuth1CustomSchemeLocalhost : Xamarin.Auth._MobileServices.Helpers.OAuth1
     {
         partial void SetPublicNonSensitiveData();
         partial void SetPrivateSensitiveData();

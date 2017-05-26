@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Xamarin.Auth.SampleData
+namespace Xamarin.Auth._MobileServices.SampleData
 {
-	public partial class PaypalOAuth2 : Xamarin.Auth.Helpers.OAuth2
+	public partial class PaypalOAuth2 : Xamarin.Auth._MobileServices.Helpers.OAuth2
 	{
 		partial void SetPublicNonSensitiveData();
 		partial void SetPrivateSensitiveData();

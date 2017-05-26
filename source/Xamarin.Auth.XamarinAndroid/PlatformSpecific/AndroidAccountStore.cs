@@ -52,7 +52,7 @@ namespace Xamarin.Auth._MobileServices
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Xamarin.Auth.AndroidAccountStore"/> class
+        /// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.AndroidAccountStore"/> class
         /// with a KeyStore password provided by the application.
         /// </summary>
         /// <param name="context">Context.</param>

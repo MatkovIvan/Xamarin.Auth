@@ -10,15 +10,15 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-using Xamarin.Auth.SampleData;
+using Xamarin.Auth._MobileServices.SampleData;
 
 [assembly: UsesPermission(Android.Manifest.Permission.Internet)]
 
-namespace Xamarin.Auth.Sample.XamarinAndroid
+namespace Xamarin.Auth._MobileServices.Sample.XamarinAndroid
 {
     [Activity
         (
-            Label = "Xamarin.Auth.Sample.XamarinAndroid",
+            Label = "Xamarin.Auth._MobileServices.Sample.XamarinAndroid",
             MainLauncher = true,
             Icon = "@drawable/icon"
         )
@@ -66,18 +66,18 @@ namespace Xamarin.Auth.Sample.XamarinAndroid
         {
             provider = provider_list[position];
 
-            Xamarin.Auth.Helpers.OAuth auth;
+            Xamarin.Auth._MobileServices.Helpers.OAuth auth;
             if (!Data.TestCases.TryGetValue(provider, out auth))
             {
                 Toast.MakeText(this, "Unknown OAuth Provider!", ToastLength.Long);
             }
-            if (auth is Xamarin.Auth.Helpers.OAuth1)
+            if (auth is Xamarin.Auth._MobileServices.Helpers.OAuth1)
             {
-                Authenticate(auth as Xamarin.Auth.Helpers.OAuth1);
+                Authenticate(auth as Xamarin.Auth._MobileServices.Helpers.OAuth1);
             }
             else
             {
-                Authenticate(auth as Xamarin.Auth.Helpers.OAuth2);
+                Authenticate(auth as Xamarin.Auth._MobileServices.Helpers.OAuth2);
             }
 
             return;
@@ -109,7 +109,7 @@ namespace Xamarin.Auth.Sample.XamarinAndroid
 
         public static OAuth1Authenticator Auth1 = null;
 
-        private void Authenticate(Xamarin.Auth.Helpers.OAuth1 oauth1)
+        private void Authenticate(Xamarin.Auth._MobileServices.Helpers.OAuth1 oauth1)
         {
             // Step 1.1 Creating and configuring an Authenticator
             Auth1 = new OAuth1Authenticator
@@ -153,7 +153,7 @@ namespace Xamarin.Auth.Sample.XamarinAndroid
 
         public static OAuth2Authenticator Auth2 = null;
 
-        private void Authenticate(Xamarin.Auth.Helpers.OAuth2 oauth2)
+        private void Authenticate(Xamarin.Auth._MobileServices.Helpers.OAuth2 oauth2)
         {
             if(string.IsNullOrEmpty(oauth2.OAuth_SecretKey_ConsumerSecret_APISecret))
             {
@@ -240,15 +240,15 @@ namespace Xamarin.Auth.Sample.XamarinAndroid
             {
                 // Step 2.2 Customizing the UI - Native UI [OPTIONAL]
                 // In order to access CustomTabs API 
-                Xamarin.Auth.CustomTabsConfiguration.AreAnimationsUsed = true;
-                Xamarin.Auth.CustomTabsConfiguration.IsShowTitleUsed = false;
-                Xamarin.Auth.CustomTabsConfiguration.IsUrlBarHidingUsed = false;
-                Xamarin.Auth.CustomTabsConfiguration.IsCloseButtonIconUsed = false;
-                Xamarin.Auth.CustomTabsConfiguration.IsActionButtonUsed = false;
-                Xamarin.Auth.CustomTabsConfiguration.IsActionBarToolbarIconUsed = false;
-                Xamarin.Auth.CustomTabsConfiguration.IsDefaultShareMenuItemUsed = false;
-                Xamarin.Auth.CustomTabsConfiguration.MenuItemTitle = null;
-                Xamarin.Auth.CustomTabsConfiguration.ToolbarColor = global::Android.Graphics.Color.Orange;
+                Xamarin.Auth._MobileServices.CustomTabsConfiguration.AreAnimationsUsed = true;
+                Xamarin.Auth._MobileServices.CustomTabsConfiguration.IsShowTitleUsed = false;
+                Xamarin.Auth._MobileServices.CustomTabsConfiguration.IsUrlBarHidingUsed = false;
+                Xamarin.Auth._MobileServices.CustomTabsConfiguration.IsCloseButtonIconUsed = false;
+                Xamarin.Auth._MobileServices.CustomTabsConfiguration.IsActionButtonUsed = false;
+                Xamarin.Auth._MobileServices.CustomTabsConfiguration.IsActionBarToolbarIconUsed = false;
+                Xamarin.Auth._MobileServices.CustomTabsConfiguration.IsDefaultShareMenuItemUsed = false;
+                Xamarin.Auth._MobileServices.CustomTabsConfiguration.MenuItemTitle = null;
+                Xamarin.Auth._MobileServices.CustomTabsConfiguration.ToolbarColor = global::Android.Graphics.Color.Orange;
             }
 
             // Step 3 Present/Launch the Login UI
@@ -323,12 +323,12 @@ namespace Xamarin.Auth.Sample.XamarinAndroid
                     {
                         string token_name = default(string);
                         Type t = sender.GetType();
-                        if (t == typeof(Xamarin.Auth.OAuth2Authenticator))
+                        if (t == typeof(Xamarin.Auth._MobileServices.OAuth2Authenticator))
                         {
                             token_name = "access_token";
                             token = account.Properties[token_name].ToString();
                         }
-                        else if (t == typeof(Xamarin.Auth.OAuth1Authenticator))
+                        else if (t == typeof(Xamarin.Auth._MobileServices.OAuth1Authenticator))
                         {
                             token_name = "oauth_token";
                             token = account.Properties[token_name].ToString();
@@ -386,12 +386,12 @@ namespace Xamarin.Auth.Sample.XamarinAndroid
                 {
                     string token_name = default(string);
                     Type t = authenticator.GetType();
-                    if (t == typeof(Xamarin.Auth.OAuth2Authenticator))
+                    if (t == typeof(Xamarin.Auth._MobileServices.OAuth2Authenticator))
                     {
                         token_name = "access_token";
                         token = account1.Properties[token_name].ToString();
                     }
-                    else if (t == typeof(Xamarin.Auth.OAuth1Authenticator))
+                    else if (t == typeof(Xamarin.Auth._MobileServices.OAuth1Authenticator))
                     {
                         token_name = "oauth_token";
                         token = account1.Properties[token_name].ToString();
@@ -421,12 +421,12 @@ namespace Xamarin.Auth.Sample.XamarinAndroid
                 {
                     string token_name = default(string);
                     Type t = authenticator.GetType();
-                    if (t == typeof(Xamarin.Auth.OAuth2Authenticator))
+                    if (t == typeof(Xamarin.Auth._MobileServices.OAuth2Authenticator))
                     {
                         token_name = "access_token";
                         token = account2.Properties[token_name].ToString();
                     }
-                    else if (t == typeof(Xamarin.Auth.OAuth1Authenticator))
+                    else if (t == typeof(Xamarin.Auth._MobileServices.OAuth1Authenticator))
                     {
                         token_name = "oauth_token";
                         token = account2.Properties[token_name].ToString();
@@ -463,12 +463,12 @@ namespace Xamarin.Auth.Sample.XamarinAndroid
                 {
                     string token_name = default(string);
                     Type t = authenticator.GetType();
-                    if (t == typeof(Xamarin.Auth.OAuth2Authenticator))
+                    if (t == typeof(Xamarin.Auth._MobileServices.OAuth2Authenticator))
                     {
                         token_name = "access_token";
                         token = account1.Properties[token_name].ToString();
                     }
-                    else if (t == typeof(Xamarin.Auth.OAuth1Authenticator))
+                    else if (t == typeof(Xamarin.Auth._MobileServices.OAuth1Authenticator))
                     {
                         token_name = "oauth_token";
                         token = account1.Properties[token_name].ToString();
@@ -499,12 +499,12 @@ namespace Xamarin.Auth.Sample.XamarinAndroid
                 {
                     string token_name = default(string);
                     Type t = authenticator.GetType();
-                    if (t == typeof(Xamarin.Auth.OAuth2Authenticator))
+                    if (t == typeof(Xamarin.Auth._MobileServices.OAuth2Authenticator))
                     {
                         token_name = "access_token";
                         token = account2.Properties[token_name].ToString();
                     }
-                    else if (t == typeof(Xamarin.Auth.OAuth1Authenticator))
+                    else if (t == typeof(Xamarin.Auth._MobileServices.OAuth1Authenticator))
                     {
                         token_name = "oauth_token";
                         token = account2.Properties[token_name].ToString();

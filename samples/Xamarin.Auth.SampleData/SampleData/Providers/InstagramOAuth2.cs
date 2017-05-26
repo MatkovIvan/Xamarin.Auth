@@ -1,9 +1,9 @@
 ﻿using System;
-using Xamarin.Auth.Helpers;
+using Xamarin.Auth._MobileServices.Helpers;
 
-namespace Xamarin.Auth.SampleData
+namespace Xamarin.Auth._MobileServices.SampleData
 {
-	public partial class InstagramOAuth2 : Xamarin.Auth.Helpers.OAuth2
+	public partial class InstagramOAuth2 : Xamarin.Auth._MobileServices.Helpers.OAuth2
 	{
 		partial void SetPublicNonSensitiveData();
 		partial void SetPrivateSensitiveData();
@@ -28,7 +28,7 @@ namespace Xamarin.Auth.SampleData
 @"
     https://instagram.com/developer/
     https://www.instagram.com/developer/clients/manage/
-    Xamarin.Auth.Component
+    Xamarin.Auth._MobileServices.Component
     CLIENT INFO
     CLIENT ID       
     WEBSITE URL     http://xamarin.com

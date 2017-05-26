@@ -32,7 +32,7 @@ namespace Xamarin.Auth._MobileServices
         public Account Account { get; private set; }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Xamarin.Auth.AuthenticatorCompletedEventArgs"/> class.
+        /// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.AuthenticatorCompletedEventArgs"/> class.
         /// </summary>
         /// <param name='account'>
         /// The account created or <see langword="null"/> if authentication failed or was canceled.

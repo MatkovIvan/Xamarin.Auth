@@ -1,9 +1,9 @@
 ﻿using System;
-using Xamarin.Auth.Helpers;
+using Xamarin.Auth._MobileServices.Helpers;
 
-namespace Xamarin.Auth.SampleData
+namespace Xamarin.Auth._MobileServices.SampleData
 {
-	public partial class TwitterOAuth1 : Xamarin.Auth.Helpers.OAuth1
+	public partial class TwitterOAuth1 : Xamarin.Auth._MobileServices.Helpers.OAuth1
 	{
 		partial void SetPublicNonSensitiveData();
 		partial void SetPrivateSensitiveData();

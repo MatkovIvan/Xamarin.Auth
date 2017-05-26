@@ -23,8 +23,12 @@ namespace Xamarin.Auth._MobileServices
 	/// Accounts are stored using a service ID and the username of the account
 	/// as a primary key.
 	/// </summary>
-	public partial class AccountStoreException : AuthException
-	{
+#if XAMARIN_AUTH_INTERNAL
+    internal partial class AccountStoreException : AuthException
+#else
+    public partial class AccountStoreException : AuthException
+#endif
+    {
         public string Operation
         {
             get;

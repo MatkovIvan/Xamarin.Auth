@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Xamarin.Auth.Sample.WinRTWindowsPhone81")]
+[assembly: AssemblyTitle("Xamarin.Auth._MobileServices.Sample.WinRTWindowsPhone81")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Xamarin.Auth.Sample.WinRTWindowsPhone81")]
+[assembly: AssemblyProduct("Xamarin.Auth._MobileServices.Sample.WinRTWindowsPhone81")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

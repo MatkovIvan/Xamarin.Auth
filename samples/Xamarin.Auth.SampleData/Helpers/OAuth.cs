@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Xamarin.Auth.Helpers
+namespace Xamarin.Auth._MobileServices.Helpers
 {
     /*
 			WORKING!!

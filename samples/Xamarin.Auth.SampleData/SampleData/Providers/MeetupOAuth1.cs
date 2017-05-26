@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Xamarin.Auth.SampleData
+namespace Xamarin.Auth._MobileServices.SampleData
 {
-	public partial class MeetupOAuth1 : Xamarin.Auth.Helpers.OAuth1
+	public partial class MeetupOAuth1 : Xamarin.Auth._MobileServices.Helpers.OAuth1
 	{
 		partial void SetPublicNonSensitiveData();
 		partial void SetPrivateSensitiveData();

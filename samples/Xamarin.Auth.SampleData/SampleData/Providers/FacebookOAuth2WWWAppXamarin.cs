@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Xamarin.Auth.SampleData
+namespace Xamarin.Auth._MobileServices.SampleData
 {
-	public partial class FacebookOAuth2WWWAppXamarin : Xamarin.Auth.Helpers.OAuth2
+	public partial class FacebookOAuth2WWWAppXamarin : Xamarin.Auth._MobileServices.Helpers.OAuth2
 	{
 		partial void SetPublicNonSensitiveData();
 		partial void SetPrivateSensitiveData();
@@ -28,7 +28,7 @@ namespace Xamarin.Auth.SampleData
 @"
 	https://developers.facebook.com/apps/
 		Settings 
-            Display Name = Xamarin.Auth.WWW.xamarin.com
+            Display Name = Xamarin.Auth._MobileServices.WWW.xamarin.com
 			Advanced
 				https://developers.facebook.com/apps/<AppID>/settings/advanced/
 

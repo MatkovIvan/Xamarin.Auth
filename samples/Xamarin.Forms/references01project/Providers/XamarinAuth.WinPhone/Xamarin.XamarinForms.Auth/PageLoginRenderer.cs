@@ -73,8 +73,8 @@ namespace Xamarin.Auth._MobileServices.XamarinForms.WindowsPhone
 
 		private void Login (HolisticWare.Auth.OAuth1 oauth1)
 		{
-			global::Xamarin.Auth.OAuth1Authenticator auth = 
-					new global::Xamarin.Auth.OAuth1Authenticator 
+			global::Xamarin.Auth._MobileServices.OAuth1Authenticator auth = 
+					new global::Xamarin.Auth._MobileServices.OAuth1Authenticator 
 						(
 						consumerKey: oauth1.OAuth_IdApplication_IdAPI_KeyAPI_IdClient_IdCustomer,
 						consumerSecret: oauth1.OAuth1_SecretKey_ConsumerSecret_APISecret,
@@ -102,7 +102,7 @@ namespace Xamarin.Auth._MobileServices.XamarinForms.WindowsPhone
 
 		private void Login (HolisticWare.Auth.OAuth2 oauth2)
 		{
-			global::Xamarin.Auth.OAuth2Authenticator auth = null;
+			global::Xamarin.Auth._MobileServices.OAuth2Authenticator auth = null;
 
 			if (
 				null == oauth2.OAuth1_UriAccessToken)
@@ -110,7 +110,7 @@ namespace Xamarin.Auth._MobileServices.XamarinForms.WindowsPhone
 				try
 				{
 					auth = 
-						new global::Xamarin.Auth.OAuth2Authenticator 
+						new global::Xamarin.Auth._MobileServices.OAuth2Authenticator 
 						(
 						clientId: oauth2.OAuth_IdApplication_IdAPI_KeyAPI_IdClient_IdCustomer,
 						scope: oauth2.OAuth2_Scope,
@@ -127,7 +127,7 @@ namespace Xamarin.Auth._MobileServices.XamarinForms.WindowsPhone
 			else
 			{
 				auth = 
-					new global::Xamarin.Auth.OAuth2Authenticator 
+					new global::Xamarin.Auth._MobileServices.OAuth2Authenticator 
 						(
 						clientId: oauth2.OAuth_IdApplication_IdAPI_KeyAPI_IdClient_IdCustomer, 
 						clientSecret: oauth2.OAuth1_SecretKey_ConsumerSecret_APISecret,
@@ -153,7 +153,7 @@ namespace Xamarin.Auth._MobileServices.XamarinForms.WindowsPhone
 			return;
 		}
 
-		private void auth_Completed(object sender, global::Xamarin.Auth.AuthenticatorCompletedEventArgs e)
+		private void auth_Completed(object sender, global::Xamarin.Auth._MobileServices.AuthenticatorCompletedEventArgs e)
 		{
 			if (e.IsAuthenticated)
 			{
@@ -185,7 +185,7 @@ namespace Xamarin.Auth._MobileServices.XamarinForms.WindowsPhone
 			return;
 		}
 
-		public Xamarin.Auth.Helpers.OAuth OAuth
+		public Xamarin.Auth._MobileServices.Helpers.OAuth OAuth
 		{
 			get;
 			set;

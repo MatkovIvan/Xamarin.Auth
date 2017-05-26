@@ -127,8 +127,8 @@ namespace Xamarin.Auth._MobileServices
 			string msg = 
 				@"
 					TODO: 
-					Get-Project Xamarin.Auth.Portable | Install-Package System.Security.Cryptography.Hashing -Pre
-					Get-Project Xamarin.Auth.Portable | Install-Package System.Security.Cryptography.Hashing.Algorithms -Pre
+					Get-Project Xamarin.Auth._MobileServices.Portable | Install-Package System.Security.Cryptography.Hashing -Pre
+					Get-Project Xamarin.Auth._MobileServices.Portable | Install-Package System.Security.Cryptography.Hashing.Algorithms -Pre
 				";
 			System.Diagnostics.Debug.WriteLine("Xamarin.Auth: " + msg);
 #endif

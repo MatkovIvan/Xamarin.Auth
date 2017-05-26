@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Xamarin.Auth.Sample.XamarinIOS
+namespace Xamarin.Auth._MobileServices.Sample.XamarinIOS
 {
 	public class Application
 	{

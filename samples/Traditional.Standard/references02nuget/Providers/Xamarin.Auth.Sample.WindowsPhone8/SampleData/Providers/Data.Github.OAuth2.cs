@@ -1,14 +1,14 @@
 ﻿using System;
-using Xamarin.Auth.Helpers;
+using Xamarin.Auth._MobileServices.Helpers;
 
-namespace Xamarin.Auth.SampleData
+namespace Xamarin.Auth._MobileServices.SampleData
 {
 	public partial class Data 
 	{
 		static partial void SetPublicDemoDataGithubOAuth2()
 		{
 			/// https://developer.github.com/v3/oauth/#scopes
-			oauth2 = new Xamarin.Auth.Helpers.OAuth2()
+			oauth2 = new Xamarin.Auth._MobileServices.Helpers.OAuth2()
 			{
 				Description = "Github OAuth2",
 				OAuth_IdApplication_IdAPI_KeyAPI_IdClient_IdCustomer = "",

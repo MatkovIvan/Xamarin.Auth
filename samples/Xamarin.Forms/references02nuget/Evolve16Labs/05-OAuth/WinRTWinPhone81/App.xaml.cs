@@ -68,7 +68,7 @@ namespace ComicBook.WinRTWinPhone81
                 rootFrame.Language = Windows.Globalization.ApplicationLanguages.Languages[0];
 
                 Xamarin.Forms.Forms.Init(e); // requires LaunchActivatedEventArgs
-                global::Xamarin.Auth.Presenters.WinRTWindowsPhone81.AuthenticationConfiguration.Init();
+                global::Xamarin.Auth._MobileServices.Presenters.WinRTWindowsPhone81.AuthenticationConfiguration.Init();
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {

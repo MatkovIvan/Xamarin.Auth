@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Xamarin.Auth.ANE.iOS
+namespace Xamarin.Auth._MobileServices.ANE.iOS
 {
 	public class Application
 	{

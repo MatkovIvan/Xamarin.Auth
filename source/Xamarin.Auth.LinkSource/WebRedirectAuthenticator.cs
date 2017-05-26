@@ -35,7 +35,7 @@ namespace Xamarin.Auth._MobileServices
         Uri redirectUrl;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Xamarin.Auth.WebRedirectAuthenticator"/> class.
+        /// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.WebRedirectAuthenticator"/> class.
         /// </summary>
         /// <param name='initialUrl'>
         /// The initial URL loaded into the web browser.

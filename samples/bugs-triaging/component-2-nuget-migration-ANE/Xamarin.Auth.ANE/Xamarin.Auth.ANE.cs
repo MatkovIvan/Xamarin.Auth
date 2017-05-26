@@ -2,7 +2,7 @@
 using LeanKit.Core.ApplicationServices;
 using Xamarin.Forms;
 
-namespace Xamarin.Auth.ANE
+namespace Xamarin.Auth._MobileServices.ANE
 {
 	public class App : Application
 	{
@@ -10,7 +10,7 @@ namespace Xamarin.Auth.ANE
 		{
 			// The root page of your application
 			var content = new ContentPage {
-				Title = "Xamarin.Auth.ANE",
+				Title = "Xamarin.Auth._MobileServices.ANE",
 				Content = new StackLayout {
 					VerticalOptions = LayoutOptions.Center,
 					Children = {

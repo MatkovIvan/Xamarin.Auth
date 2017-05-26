@@ -10,7 +10,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 #endif
 
-namespace Xamarin.Auth.Sample.XamarinIOS
+namespace Xamarin.Auth._MobileServices.Sample.XamarinIOS
 {
     public partial class AppDelegate
     {

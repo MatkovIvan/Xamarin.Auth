@@ -29,7 +29,7 @@ namespace Xamarin.Auth._MobileServices
     /// Implements OAuth 2.0 implicit granting. http://tools.ietf.org/html/draft-ietf-oauth-v2-31#section-4.2
     /// </summary>
 #if XAMARIN_AUTH_INTERNAL
-    internal class OAuth2Authenticator : WebRedirectAuthenticator
+    internal partial class OAuth2Authenticator : WebRedirectAuthenticator
 #else
     public partial class OAuth2Authenticator : WebRedirectAuthenticator
 #endif
@@ -160,7 +160,7 @@ namespace Xamarin.Auth._MobileServices
 
 
         /// <summary>
-        /// Initializes a new <see cref="Xamarin.Auth.OAuth2Authenticator"/>
+        /// Initializes a new <see cref="Xamarin.Auth._MobileServices.OAuth2Authenticator"/>
         /// that authenticates using implicit granting (token).
         /// </summary>
         /// <param name='clientId'>
@@ -238,7 +238,7 @@ namespace Xamarin.Auth._MobileServices
         }
 
         /// <summary>
-        /// Initializes a new instance <see cref="Xamarin.Auth.OAuth2Authenticator"/>
+        /// Initializes a new instance <see cref="Xamarin.Auth._MobileServices.OAuth2Authenticator"/>
         /// that authenticates using authorization codes (code).
         /// </summary>
         /// <param name='clientId'>
@@ -729,7 +729,7 @@ namespace Xamarin.Auth._MobileServices
         /// Disables the escaping of the scope parameter.
         /// </summary>
         /// <value><c>true</c> if the scope should not be escaped; otherwise, <c>false</c>.</value>
-        /// <remarks>By default, the <see cref="Xamarin.Auth.OAuth2Authenticator"/> escapes the 
+        /// <remarks>By default, the <see cref="Xamarin.Auth._MobileServices.OAuth2Authenticator"/> escapes the 
         /// scope parameter. When used with some OAuth2 providers (such as Instagram), this results 
         /// in an HTTP 400 BAD REQUEST being returned on authentication. Setting this property to 
         /// <c>true</c> will prevent escaping of the scope parameter.</remarks>

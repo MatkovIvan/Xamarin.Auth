@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Xamarin.Auth.Helpers
+namespace Xamarin.Auth._MobileServices.Helpers
 {
 	public partial class OAuth1 : OAuth
 	{

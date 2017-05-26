@@ -22,7 +22,7 @@ using Windows.UI.Xaml.Controls;
 
 using AuthenticateUIType = System.Type;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	/// <summary>
 	/// An authenticator that displays a web page.

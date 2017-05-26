@@ -1,9 +1,9 @@
 ﻿using System;
-using Xamarin.Auth.Helpers;
+using Xamarin.Auth._MobileServices.Helpers;
 
-namespace Xamarin.Auth.SampleData
+namespace Xamarin.Auth._MobileServices.SampleData
 {
-	public partial class MicrosoftLiveOAuth2 : Xamarin.Auth.Helpers.OAuth2
+	public partial class MicrosoftLiveOAuth2 : Xamarin.Auth._MobileServices.Helpers.OAuth2
 	{
 		partial void SetPublicNonSensitiveData();
 		partial void SetPrivateSensitiveData();
@@ -29,7 +29,7 @@ namespace Xamarin.Auth.SampleData
 
 	Basic Information
 		Application name:
-			Xamarin.Auth.Component
+			Xamarin.Auth._MobileServices.Component
 		Default language:
 			English (United States)
 		Application logo:
@@ -55,7 +55,7 @@ namespace Xamarin.Auth.SampleData
 		Language:
 			English (United States)
 		Application name:
-			Xamarin.Auth.Component
+			Xamarin.Auth._MobileServices.Component
 
 	clientId: '<MyclientI>',
 	scope: 'wl.basic, wl.signin, wl.offline_access',

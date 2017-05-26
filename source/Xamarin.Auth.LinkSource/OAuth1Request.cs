@@ -34,7 +34,7 @@ namespace Xamarin.Auth._MobileServices
         bool includeMultipartsInSignature;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Xamarin.Auth.OAuth1Request"/> class.
+        /// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.OAuth1Request"/> class.
         /// </summary>
         /// <param name='method'>
         /// The HTTP method.
@@ -43,7 +43,7 @@ namespace Xamarin.Auth._MobileServices
         /// The URL.
         /// </param>
         /// <param name='parameters'>
-        /// Parameters that will pre-populate the <see cref="Xamarin.Auth.Request.Parameters"/> property or <see langword="null"/>.
+        /// Parameters that will pre-populate the <see cref="Xamarin.Auth._MobileServices.Request.Parameters"/> property or <see langword="null"/>.
         /// </param>
         /// <param name='account'>
         /// The account used to authenticate this request.

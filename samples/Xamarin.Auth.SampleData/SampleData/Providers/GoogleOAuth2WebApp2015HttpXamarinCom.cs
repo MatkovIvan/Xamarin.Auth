@@ -1,9 +1,9 @@
 ﻿using System;
-using Xamarin.Auth.Helpers;
+using Xamarin.Auth._MobileServices.Helpers;
 
-namespace Xamarin.Auth.SampleData
+namespace Xamarin.Auth._MobileServices.SampleData
 {
-	public partial class GoogleOAuth2WebApp2015HttpXamarinCom : Xamarin.Auth.Helpers.OAuth2
+	public partial class GoogleOAuth2WebApp2015HttpXamarinCom : Xamarin.Auth._MobileServices.Helpers.OAuth2
 	{
 		partial void SetPublicNonSensitiveData();
 		partial void SetPrivateSensitiveData();

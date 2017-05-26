@@ -8,7 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Auth;
 using Xamarin.Auth._MobileServices.XamarinForms;
 
-using Xamarin.Auth.SampleData;
+using Xamarin.Auth._MobileServices.SampleData;
 
 namespace XamarinAuth.Views
 {
@@ -34,43 +34,43 @@ namespace XamarinAuth.Views
 			switch (provider)
 			{
 				case "Facebook OAuth2":
-					Xamarin.Auth.Helpers.OAuth2 oauth_facebook = null;
-					oauth_facebook = Data.TestCases [provider] as Xamarin.Auth.Helpers.OAuth2;
+					Xamarin.Auth._MobileServices.Helpers.OAuth2 oauth_facebook = null;
+					oauth_facebook = Data.TestCases [provider] as Xamarin.Auth._MobileServices.Helpers.OAuth2;
 					AuthenticateOAuth2 (oauth_facebook);
 					break;
 				case "Twitter OAuth1":
-                    Xamarin.Auth.Helpers.OAuth1 oauth_twitter = null;
-                    oauth_twitter = Data.TestCases[provider] as Xamarin.Auth.Helpers.OAuth1;  
+                    Xamarin.Auth._MobileServices.Helpers.OAuth1 oauth_twitter = null;
+                    oauth_twitter = Data.TestCases[provider] as Xamarin.Auth._MobileServices.Helpers.OAuth1;  
 					AuthenticateOAuth1 (oauth_twitter);
                 	break;
 				case "Google OAuth2":
-                    Xamarin.Auth.Helpers.OAuth2 oauth_google = null;
-                    oauth_google = Data.TestCases[provider] as Xamarin.Auth.Helpers.OAuth2;  
+                    Xamarin.Auth._MobileServices.Helpers.OAuth2 oauth_google = null;
+                    oauth_google = Data.TestCases[provider] as Xamarin.Auth._MobileServices.Helpers.OAuth2;  
 					AuthenticateOAuth2 (oauth_google);
                     break;
 				case "Microsoft Live OAuth2":
-                    Xamarin.Auth.Helpers.OAuth2 oauth_mslive = null;
-                    oauth_mslive = Data.TestCases[provider] as Xamarin.Auth.Helpers.OAuth2;  
+                    Xamarin.Auth._MobileServices.Helpers.OAuth2 oauth_mslive = null;
+                    oauth_mslive = Data.TestCases[provider] as Xamarin.Auth._MobileServices.Helpers.OAuth2;  
 					AuthenticateOAuth2 (oauth_mslive);
                     break;
 				case "LinkedIn OAuth1":
-                    Xamarin.Auth.Helpers.OAuth1 oauth_linkedin1 = null;
-                    oauth_linkedin1 = Data.TestCases[provider] as Xamarin.Auth.Helpers.OAuth1;  
+                    Xamarin.Auth._MobileServices.Helpers.OAuth1 oauth_linkedin1 = null;
+                    oauth_linkedin1 = Data.TestCases[provider] as Xamarin.Auth._MobileServices.Helpers.OAuth1;  
 					AuthenticateOAuth1 (oauth_linkedin1);
                     break;
 				case "LinkedIn OAuth2":
-                    Xamarin.Auth.Helpers.OAuth2 oauth_linkedin2 = null;
-                    oauth_linkedin2 = Data.TestCases[provider] as Xamarin.Auth.Helpers.OAuth2;  
+                    Xamarin.Auth._MobileServices.Helpers.OAuth2 oauth_linkedin2 = null;
+                    oauth_linkedin2 = Data.TestCases[provider] as Xamarin.Auth._MobileServices.Helpers.OAuth2;  
 					AuthenticateOAuth2 (oauth_linkedin2);
                     break;
 				case "Github OAuth2":
-                    Xamarin.Auth.Helpers.OAuth2 oauth_github = null;
-                    oauth_github = Data.TestCases[provider] as Xamarin.Auth.Helpers.OAuth2;  
+                    Xamarin.Auth._MobileServices.Helpers.OAuth2 oauth_github = null;
+                    oauth_github = Data.TestCases[provider] as Xamarin.Auth._MobileServices.Helpers.OAuth2;  
 					AuthenticateOAuth2 (oauth_github);
                     break;
 				case "Instagram OAuth2":
-                    Xamarin.Auth.Helpers.OAuth2 oauth_instagram = null;
-                    oauth_instagram = Data.TestCases[provider] as Xamarin.Auth.Helpers.OAuth2;  
+                    Xamarin.Auth._MobileServices.Helpers.OAuth2 oauth_instagram = null;
+                    oauth_instagram = Data.TestCases[provider] as Xamarin.Auth._MobileServices.Helpers.OAuth2;  
 					AuthenticateOAuth2 (oauth_instagram);
                     break;
 				default:
@@ -84,7 +84,7 @@ namespace XamarinAuth.Views
 
 		}
 
-		public void AuthenticateOAuth2(Xamarin.Auth.Helpers.OAuth2 oauth2)
+		public void AuthenticateOAuth2(Xamarin.Auth._MobileServices.Helpers.OAuth2 oauth2)
 		{
 			page = new PageOAuth
 				(
@@ -101,7 +101,7 @@ namespace XamarinAuth.Views
 			return;
 		}
 
-		public void AuthenticateOAuth1(Xamarin.Auth.Helpers.OAuth1 oauth1)
+		public void AuthenticateOAuth1(Xamarin.Auth._MobileServices.Helpers.OAuth1 oauth1)
 		{
 			page = new PageOAuth
 				(

@@ -39,7 +39,6 @@ namespace Xamarin.Auth._MobileServices
 #if XAMARIN_AUTH_INTERNAL
 	internal class OAuth1Authenticator 
         :
-        : 
         WebAuthenticator
         //WebRedirectAuthenticator  //mc++ why not WebRedirectAuthenticator??
 #else
@@ -65,7 +64,7 @@ namespace Xamarin.Auth._MobileServices
         string verifier;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Xamarin.Auth.OAuth1Authenticator"/> class.
+        /// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.OAuth1Authenticator"/> class.
         /// </summary>
         /// <param name='consumerKey'>
         /// Consumer key.

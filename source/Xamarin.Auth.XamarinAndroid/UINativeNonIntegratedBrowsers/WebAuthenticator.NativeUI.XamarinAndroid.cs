@@ -12,7 +12,11 @@ using UIContext =
 
 namespace Xamarin.Auth._MobileServices
 {
+#if XAMARIN_AUTH_INTERNAL
+    internal partial class WebAuthenticator
+#else
     public partial class WebAuthenticator
+#endif
     {
 
         public delegate AuthenticateUIType PlatformUIMethodDelegate(UIContext context);

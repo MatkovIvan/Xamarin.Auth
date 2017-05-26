@@ -16,11 +16,11 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 
-using Xamarin.Auth.SampleData;
+using Xamarin.Auth._MobileServices.SampleData;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace Xamarin.Auth.Sample
+namespace Xamarin.Auth._MobileServices.Sample
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -64,46 +64,46 @@ namespace Xamarin.Auth.Sample
             switch (provider)
             {
                 case "Facebook OAuth2":
-                    Authenticate(Data.TestCases["Facebook OAuth2"] as Xamarin.Auth.Helpers.OAuth2);
+                    Authenticate(Data.TestCases["Facebook OAuth2"] as Xamarin.Auth._MobileServices.Helpers.OAuth2);
                     break;
                 case "Twitter OAuth1":
-                    Authenticate(Data.TestCases["Twitter OAuth1"] as Xamarin.Auth.Helpers.OAuth1);
+                    Authenticate(Data.TestCases["Twitter OAuth1"] as Xamarin.Auth._MobileServices.Helpers.OAuth1);
                     break;
                 case "Google OAuth2":
-                    Authenticate(Data.TestCases["Google OAuth2"] as Xamarin.Auth.Helpers.OAuth2);
+                    Authenticate(Data.TestCases["Google OAuth2"] as Xamarin.Auth._MobileServices.Helpers.OAuth2);
                     break;
                 case "Microsoft Live OAuth2":
-                    Authenticate(Data.TestCases["Microsoft Live OAuth2"] as Xamarin.Auth.Helpers.OAuth2);
+                    Authenticate(Data.TestCases["Microsoft Live OAuth2"] as Xamarin.Auth._MobileServices.Helpers.OAuth2);
                     break;
                 case "LinkedIn OAuth1":
-                    Authenticate(Data.TestCases["LinkedIn OAuth1"] as Xamarin.Auth.Helpers.OAuth1);
+                    Authenticate(Data.TestCases["LinkedIn OAuth1"] as Xamarin.Auth._MobileServices.Helpers.OAuth1);
                     break;
                 case "LinkedIn OAuth2":
-                    Authenticate(Data.TestCases["LinkedIn OAuth2"] as Xamarin.Auth.Helpers.OAuth2);
+                    Authenticate(Data.TestCases["LinkedIn OAuth2"] as Xamarin.Auth._MobileServices.Helpers.OAuth2);
                     break;
                 case "Github OAuth2":
-                    Authenticate(Data.TestCases["Github OAuth2"] as Xamarin.Auth.Helpers.OAuth2);
+                    Authenticate(Data.TestCases["Github OAuth2"] as Xamarin.Auth._MobileServices.Helpers.OAuth2);
                     break;
                 case "Instagram OAuth2":
-                    Authenticate(Data.TestCases["Instagram OAuth2"] as Xamarin.Auth.Helpers.OAuth2);
+                    Authenticate(Data.TestCases["Instagram OAuth2"] as Xamarin.Auth._MobileServices.Helpers.OAuth2);
                     break;
                 case "Amazon OAuth2":
-                    Authenticate(Data.TestCases[provider] as Xamarin.Auth.Helpers.OAuth2);
+                    Authenticate(Data.TestCases[provider] as Xamarin.Auth._MobileServices.Helpers.OAuth2);
                     break;
                 case "Meetup OAuth1":
-                    Authenticate(Data.TestCases[provider] as Xamarin.Auth.Helpers.OAuth2);
+                    Authenticate(Data.TestCases[provider] as Xamarin.Auth._MobileServices.Helpers.OAuth2);
                     break;
                 case "Meetup OAuth2":
-                    Authenticate(Data.TestCases[provider] as Xamarin.Auth.Helpers.OAuth2);
+                    Authenticate(Data.TestCases[provider] as Xamarin.Auth._MobileServices.Helpers.OAuth2);
                     break;
                 case "Dropbox OAuth2":
-                    Authenticate(Data.TestCases[provider] as Xamarin.Auth.Helpers.OAuth2);
+                    Authenticate(Data.TestCases[provider] as Xamarin.Auth._MobileServices.Helpers.OAuth2);
                     break;
                 case "Paypal OAuth2":
-                    Authenticate(Data.TestCases[provider] as Xamarin.Auth.Helpers.OAuth2);
+                    Authenticate(Data.TestCases[provider] as Xamarin.Auth._MobileServices.Helpers.OAuth2);
                     break;
                 case "Stackoverflow OAuth2":
-                    Authenticate(Data.TestCases[provider] as Xamarin.Auth.Helpers.OAuth2);
+                    Authenticate(Data.TestCases[provider] as Xamarin.Auth._MobileServices.Helpers.OAuth2);
                     break;
                 default:
                     //Toast.MakeText(this, "Unknown OAuth Provider!", ToastLength.Long);
@@ -114,7 +114,7 @@ namespace Xamarin.Auth.Sample
             return;
         }
 
-        private void Authenticate(Xamarin.Auth.Helpers.OAuth1 oauth1)
+        private void Authenticate(Xamarin.Auth._MobileServices.Helpers.OAuth1 oauth1)
         {
             OAuth1Authenticator auth = new OAuth1Authenticator
                 (
@@ -144,7 +144,7 @@ namespace Xamarin.Auth.Sample
             return;
         }
 
-        private void Authenticate(Xamarin.Auth.Helpers.OAuth2 oauth2)
+        private void Authenticate(Xamarin.Auth._MobileServices.Helpers.OAuth2 oauth2)
         {
             OAuth2Authenticator auth = new OAuth2Authenticator
                 (
@@ -221,12 +221,12 @@ namespace Xamarin.Auth.Sample
                     {
                         string token_name = default(string);
                         Type t = sender.GetType();
-                        if (t == typeof(Xamarin.Auth.OAuth2Authenticator))
+                        if (t == typeof(Xamarin.Auth._MobileServices.OAuth2Authenticator))
                         {
                             token_name = "access_token";
                             token = account.Properties[token_name].ToString();
                         }
-                        else if (t == typeof(Xamarin.Auth.OAuth1Authenticator))
+                        else if (t == typeof(Xamarin.Auth._MobileServices.OAuth1Authenticator))
                         {
                             token_name = "oauth_token";
                             token = account.Properties[token_name].ToString();
@@ -286,12 +286,12 @@ namespace Xamarin.Auth.Sample
                 {
                     string token_name = default(string);
                     Type t = authenticator.GetType();
-                    if (t == typeof(Xamarin.Auth.OAuth2Authenticator))
+                    if (t == typeof(Xamarin.Auth._MobileServices.OAuth2Authenticator))
                     {
                         token_name = "access_token";
                         token = account1.Properties[token_name].ToString();
                     }
-                    else if (t == typeof(Xamarin.Auth.OAuth1Authenticator))
+                    else if (t == typeof(Xamarin.Auth._MobileServices.OAuth1Authenticator))
                     {
                         token_name = "oauth_token";
                         token = account1.Properties[token_name].ToString();
@@ -318,12 +318,12 @@ namespace Xamarin.Auth.Sample
                 {
                     string token_name = default(string);
                     Type t = authenticator.GetType();
-                    if (t == typeof(Xamarin.Auth.OAuth2Authenticator))
+                    if (t == typeof(Xamarin.Auth._MobileServices.OAuth2Authenticator))
                     {
                         token_name = "access_token";
                         token = account2.Properties[token_name].ToString();
                     }
-                    else if (t == typeof(Xamarin.Auth.OAuth1Authenticator))
+                    else if (t == typeof(Xamarin.Auth._MobileServices.OAuth1Authenticator))
                     {
                         token_name = "oauth_token";
                         token = account2.Properties[token_name].ToString();

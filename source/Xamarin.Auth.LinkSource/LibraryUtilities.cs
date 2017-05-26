@@ -24,9 +24,9 @@ namespace Xamarin.Auth._MobileServices
 	/// An authenticator that displays a web page.
 	/// </summary>
 #if XAMARIN_AUTH_INTERNAL
-	internal abstract partial class WebAuthenticator
+	internal partial class LibraryUtilities
 #else
-	public partial class LibraryUtilities 
+    public partial class LibraryUtilities 
 #endif
 	{
         public static readonly string MessageNotImplementedException =

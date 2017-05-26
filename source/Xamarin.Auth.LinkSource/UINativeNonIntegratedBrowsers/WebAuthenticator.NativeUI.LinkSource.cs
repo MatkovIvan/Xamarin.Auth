@@ -4,7 +4,11 @@ using AuthenticateUIType = System.Object;
 
 namespace Xamarin.Auth._MobileServices
 {
+#if XAMARIN_AUTH_INTERNAL
+    internal partial class WebAuthenticator
+#else
     public partial class WebAuthenticator
+#endif
     {
         /// <summary>
         /// Gets or sets the get platform UIMethod.

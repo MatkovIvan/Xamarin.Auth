@@ -56,7 +56,7 @@ namespace Xamarin.Auth._MobileServices
 		public virtual IDictionary<string, string> Headers { get; protected set; }
 
 		/// <summary>
-		/// Initializes a new <see cref="Xamarin.Auth.Response"/> that wraps a <see cref="HttpResponseMessage"/>.
+		/// Initializes a new <see cref="Xamarin.Auth._MobileServices.Response"/> that wraps a <see cref="HttpResponseMessage"/>.
 		/// </summary>
 		/// <param name="response">
 		/// The <see cref="HttpResponseMessage"/> that this response will wrap.
@@ -79,7 +79,7 @@ namespace Xamarin.Auth._MobileServices
 		}
 
 		/// <summary>
-		/// Initializes a new blank <see cref="Xamarin.Auth.Response"/>.
+		/// Initializes a new blank <see cref="Xamarin.Auth._MobileServices.Response"/>.
 		/// </summary>
 		protected Response ()
 		{
@@ -112,10 +112,10 @@ namespace Xamarin.Auth._MobileServices
         }
 
         /// <summary>
-        /// Returns a <see cref="System.String"/> that represents the current <see cref="Xamarin.Auth.Response"/>.
+        /// Returns a <see cref="System.String"/> that represents the current <see cref="Xamarin.Auth._MobileServices.Response"/>.
         /// </summary>
         /// <returns>
-        /// A <see cref="System.String"/> that represents the current <see cref="Xamarin.Auth.Response"/>.
+        /// A <see cref="System.String"/> that represents the current <see cref="Xamarin.Auth._MobileServices.Response"/>.
         /// </returns>
         public override string ToString ()
 		{
@@ -123,7 +123,7 @@ namespace Xamarin.Auth._MobileServices
 		}
 
 		/// <summary>
-		/// Releases unmanaged resources and performs other cleanup operations before the <see cref="Xamarin.Auth.Response"/>
+		/// Releases unmanaged resources and performs other cleanup operations before the <see cref="Xamarin.Auth._MobileServices.Response"/>
 		/// is reclaimed by garbage collection.
 		/// </summary>
 		~Response ()
@@ -132,7 +132,7 @@ namespace Xamarin.Auth._MobileServices
 		}
 
 		/// <summary>
-		/// Releases all resource used by the <see cref="Xamarin.Auth.Response"/> object.
+		/// Releases all resource used by the <see cref="Xamarin.Auth._MobileServices.Response"/> object.
 		/// </summary>
 		public void Dispose ()
 		{
@@ -141,7 +141,7 @@ namespace Xamarin.Auth._MobileServices
 		}
 
 		/// <summary>
-		/// Releases all resource used by the <see cref="Xamarin.Auth.Response"/> object.
+		/// Releases all resource used by the <see cref="Xamarin.Auth._MobileServices.Response"/> object.
 		/// </summary>
 		/// <param name='disposing'>
 		/// Whether this function was called from the Dispose method.

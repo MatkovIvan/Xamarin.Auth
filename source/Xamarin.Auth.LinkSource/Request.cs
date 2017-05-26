@@ -63,7 +63,7 @@ namespace Xamarin.Auth._MobileServices
         public virtual Account Account { get; set; }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Xamarin.Auth.Request"/> class.
+        /// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.Request"/> class.
         /// </summary>
         /// <param name='method'>
         /// The HTTP method.

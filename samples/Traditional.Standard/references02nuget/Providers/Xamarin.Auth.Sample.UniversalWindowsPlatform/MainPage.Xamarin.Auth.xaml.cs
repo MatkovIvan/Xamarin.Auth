@@ -11,9 +11,9 @@ using System.Text;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Controls;
 
-using Xamarin.Auth.SampleData;
+using Xamarin.Auth._MobileServices.SampleData;
 
-namespace Xamarin.Auth.Sample
+namespace Xamarin.Auth._MobileServices.Sample
 {
     public partial class MainPage
     {
@@ -26,17 +26,17 @@ namespace Xamarin.Auth.Sample
 			string si = ((ListBox)sender).SelectedItem.ToString();
 			string provider = si;
 
-			Xamarin.Auth.Helpers.OAuth auth;
+			Xamarin.Auth._MobileServices.Helpers.OAuth auth;
 			if (!Data.TestCases.TryGetValue (provider, out auth)) 
             {
 				//TODO: MessageBox.Show("Unknown OAuth Provider!");
 			}
-			if (auth is Xamarin.Auth.Helpers.OAuth1) 
+			if (auth is Xamarin.Auth._MobileServices.Helpers.OAuth1) 
             {
-				Authenticate (auth as Xamarin.Auth.Helpers.OAuth1);
+				Authenticate (auth as Xamarin.Auth._MobileServices.Helpers.OAuth1);
 			} else 
             {
-				Authenticate (auth as Xamarin.Auth.Helpers.OAuth2);
+				Authenticate (auth as Xamarin.Auth._MobileServices.Helpers.OAuth2);
 			}
 			var list = Data.TestCases;
 
@@ -44,7 +44,7 @@ namespace Xamarin.Auth.Sample
 
 		}
 
-		private void Authenticate(Xamarin.Auth.Helpers.OAuth1 oauth1)
+		private void Authenticate(Xamarin.Auth._MobileServices.Helpers.OAuth1 oauth1)
 		{
 			OAuth1Authenticator auth = new OAuth1Authenticator 
 				(
@@ -72,7 +72,7 @@ namespace Xamarin.Auth.Sample
             return;
 		}
 
-		private void Authenticate(Xamarin.Auth.Helpers.OAuth2 oauth2)
+		private void Authenticate(Xamarin.Auth._MobileServices.Helpers.OAuth2 oauth2)
 		{
 			OAuth2Authenticator auth = null;
 
@@ -191,12 +191,12 @@ namespace Xamarin.Auth.Sample
 				{
 					string token_name = default(string);
 					Type t = authenticator.GetType();
-					if (t == typeof(Xamarin.Auth.OAuth2Authenticator))
+					if (t == typeof(Xamarin.Auth._MobileServices.OAuth2Authenticator))
 					{
 						token_name = "access_token";
 						token = account1.Properties[token_name].ToString();
 					}
-					else if (t == typeof(Xamarin.Auth.OAuth1Authenticator))
+					else if (t == typeof(Xamarin.Auth._MobileServices.OAuth1Authenticator))
 					{
 						token_name = "oauth_token";
 						token = account1.Properties[token_name].ToString();
@@ -220,12 +220,12 @@ namespace Xamarin.Auth.Sample
 				{
 					string token_name = default(string);
 					Type t = authenticator.GetType();
-					if (t == typeof(Xamarin.Auth.OAuth2Authenticator))
+					if (t == typeof(Xamarin.Auth._MobileServices.OAuth2Authenticator))
 					{
 						token_name = "access_token";
 						token = account2.Properties[token_name].ToString();
 					}
-					else if (t == typeof(Xamarin.Auth.OAuth1Authenticator))
+					else if (t == typeof(Xamarin.Auth._MobileServices.OAuth1Authenticator))
 					{
 						token_name = "oauth_token";
 						token = account2.Properties[token_name].ToString();

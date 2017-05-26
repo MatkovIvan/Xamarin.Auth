@@ -6,7 +6,7 @@ using Xamarin.UITest;
 using Xamarin.UITest.iOS;
 using Xamarin.UITest.Queries;
 
-namespace Xamarin.Auth.Sample.UITests.XamarinIOS
+namespace Xamarin.Auth._MobileServices.Sample.UITests.XamarinIOS
 {
 	[TestFixture]
 	public class Tests

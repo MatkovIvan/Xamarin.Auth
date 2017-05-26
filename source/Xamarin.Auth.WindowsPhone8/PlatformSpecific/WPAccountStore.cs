@@ -22,7 +22,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Xamarin.Auth.WindowsPhone
+namespace Xamarin.Auth._MobileServices.WindowsPhone
 {
     internal partial class WPAccountStore : AccountStore
     {

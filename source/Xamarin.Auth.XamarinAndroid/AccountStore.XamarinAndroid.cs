@@ -24,9 +24,9 @@ namespace Xamarin.Auth._MobileServices
 	/// as a primary key.
 	/// </summary>
 #if XAMARIN_AUTH_INTERNAL
-	internal abstract class AccountStore
+	internal abstract partial class AccountStore
 #else
-	public abstract partial class AccountStore
+    public abstract partial class AccountStore
 #endif
 	{
 		/// <summary>

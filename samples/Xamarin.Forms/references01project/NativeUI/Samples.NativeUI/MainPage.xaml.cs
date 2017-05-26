@@ -17,8 +17,8 @@ namespace Samples.NativeUI
         private void Button_Clicked(object sender, EventArgs e)
         {
             // *
-            Xamarin.Auth.OAuth2Authenticator authenticator =
-                new Xamarin.Auth.OAuth2Authenticator
+            Xamarin.Auth._MobileServices.OAuth2Authenticator authenticator =
+                new Xamarin.Auth._MobileServices.OAuth2Authenticator
                 (
                     /*       
                     clientId: "185391188679-9pa23l08ein4m4nmqccr9jm01udf3oup.apps.googleusercontent.com",
@@ -75,19 +75,19 @@ namespace Samples.NativeUI
             //---------------------------------------------------------------------
             // Xamarin.UNiversity Team Presenters Concept
             //Xamarin.Auth.Presenters.OAuthLoginPresenter presenter = null;
-            //presenter = new Xamarin.Auth.Presenters.OAuthLoginPresenter();
+            //presenter = new Xamarin.Auth._MobileServices.Presenters.OAuthLoginPresenter();
             //presenter.Login (authenticator);
             //---------------------------------------------------------------------
             // * /
             return;
         }
 
-        public void Authentication_Completed(object sender, Xamarin.Auth.AuthenticatorCompletedEventArgs e)
+        public void Authentication_Completed(object sender, Xamarin.Auth._MobileServices.AuthenticatorCompletedEventArgs e)
         {
         	return;
         }
 
-        public void Authentication_Error(object sender, Xamarin.Auth.AuthenticatorErrorEventArgs e)
+        public void Authentication_Error(object sender, Xamarin.Auth._MobileServices.AuthenticatorErrorEventArgs e)
         {
         	return;
         }

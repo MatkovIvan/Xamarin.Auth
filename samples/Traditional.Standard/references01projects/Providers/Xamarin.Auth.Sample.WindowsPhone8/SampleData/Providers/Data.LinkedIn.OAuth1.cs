@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace Xamarin.Auth.SampleData
+namespace Xamarin.Auth._MobileServices.SampleData
 {
 	public partial class Data 
 	{
 		static partial void SetPublicDemoDataLinkedInOAuth1()
 		{
-			oauth1 = new Xamarin.Auth.Helpers.OAuth1()
+			oauth1 = new Xamarin.Auth._MobileServices.Helpers.OAuth1()
 			{
 				Description = "LinkedIn OAuth1",
 				OAuth_IdApplication_IdAPI_KeyAPI_IdClient_IdCustomer = "",

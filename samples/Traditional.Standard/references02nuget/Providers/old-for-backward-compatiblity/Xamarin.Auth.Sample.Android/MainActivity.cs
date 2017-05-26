@@ -7,7 +7,7 @@ using Android.OS;
 
 using global::Xamarin.Auth;
 
-namespace Xamarin.Auth.Sample.Android
+namespace Xamarin.Auth._MobileServices.Sample.Android
 {
     [Activity(Label = "Xamarin.Auth Sample (Android)", MainLauncher = true)]
     public class MainActivity : Activity

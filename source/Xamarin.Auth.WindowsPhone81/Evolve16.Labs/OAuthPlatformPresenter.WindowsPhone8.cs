@@ -1,4 +1,4 @@
-﻿namespace Xamarin.Auth.Presenters.WinPhone
+﻿namespace  Xamarin.Auth._MobileServices.Pesenters.WinPhone
 {
     public class PlatformOAuthLoginPresenter
     {

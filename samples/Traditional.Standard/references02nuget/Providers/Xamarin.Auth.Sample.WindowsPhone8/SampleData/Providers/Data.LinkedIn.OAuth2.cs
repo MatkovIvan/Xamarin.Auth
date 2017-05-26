@@ -1,7 +1,7 @@
 ﻿using System;
-using Xamarin.Auth.Helpers;
+using Xamarin.Auth._MobileServices.Helpers;
 
-namespace Xamarin.Auth.SampleData
+namespace Xamarin.Auth._MobileServices.SampleData
 {
 	public partial class Data 
 	{
@@ -22,7 +22,7 @@ namespace Xamarin.Auth.SampleData
 			TODO: need testing... not quite correct
 
 			*/
-			oauth2 = new Xamarin.Auth.Helpers.OAuth2()
+			oauth2 = new Xamarin.Auth._MobileServices.Helpers.OAuth2()
 			{
 				Description = "LinkedIn OAuth2",
 				OAuth_IdApplication_IdAPI_KeyAPI_IdClient_IdCustomer = "",

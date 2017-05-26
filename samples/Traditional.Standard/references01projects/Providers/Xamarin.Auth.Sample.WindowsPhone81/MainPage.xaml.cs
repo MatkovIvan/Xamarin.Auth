@@ -7,13 +7,13 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-using Xamarin.Auth.Sample.Resources;
+using Xamarin.Auth._MobileServices.Sample.Resources;
 
 using System.Text;
 
-using Xamarin.Auth.SampleData;
+using Xamarin.Auth._MobileServices.SampleData;
 
-namespace Xamarin.Auth.Sample
+namespace Xamarin.Auth._MobileServices.Sample
 {
     public partial class MainPage : PhoneApplicationPage
     {

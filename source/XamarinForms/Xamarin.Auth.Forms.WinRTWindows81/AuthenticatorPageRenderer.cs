@@ -15,7 +15,7 @@ namespace Xamarin.Auth._MobileServices.XamarinForms.WinRT
 {
     public class AuthenticatorPageRenderer : Xamarin.Forms.Platform.WinRT.PageRenderer
     {
-        private Xamarin.Auth.Authenticator authenticator;
+        private Xamarin.Auth._MobileServices.Authenticator authenticator;
         private Windows.UI.Xaml.Controls.Frame frame;
 
         protected override void Dispose(bool disposing)
@@ -43,7 +43,7 @@ namespace Xamarin.Auth._MobileServices.XamarinForms.WinRT
             }
             catch (Exception ex)
             {
-                throw new Xamarin.Auth.AuthException("UWP Dispose");
+                throw new Xamarin.Auth._MobileServices.AuthException("UWP Dispose");
             }
 
             base.Dispose(disposing);
@@ -109,7 +109,7 @@ namespace Xamarin.Auth._MobileServices.XamarinForms.WinRT
             }
             catch (Exception ex)
             {
-                throw new Xamarin.Auth.AuthException("UWP OnElementChanged");
+                throw new Xamarin.Auth._MobileServices.AuthException("UWP OnElementChanged");
             }
 
             return;

@@ -1,6 +1,6 @@
-﻿using Xamarin.Auth.Sample.Resources;
+﻿using  Xamarin.Auth._MobileServices.Smple.Resources;
 
-namespace Xamarin.Auth.Sample
+namespace Xamarin.Auth._MobileServices.Sample
 {
     /// <summary>
     /// Provides access to string resources.

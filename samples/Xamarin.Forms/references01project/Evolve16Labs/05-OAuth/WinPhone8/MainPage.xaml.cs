@@ -22,8 +22,8 @@ namespace ComicBook.WindowsPhone8Silverlight
             //BuildLocalizedApplicationBar();
 
             Xamarin.Forms.Forms.Init();
-            global::Xamarin.Auth.Auth.Init(this);
-            global::Xamarin.Auth.Presenters.WinPhone.AuthenticationConfiguration.Init();
+            global::Xamarin.Auth._MobileServices.Auth.Init(this);
+            global::Xamarin.Auth._MobileServices.Presenters.WinPhone.AuthenticationConfiguration.Init();
 
             LoadApplication(new ComicBook.App());
         }
