@@ -23,13 +23,9 @@ namespace Xamarin.Auth
         /// <value><c>true</c> if is using native user interface; otherwise, <c>false</c>.</value>
         public bool IsUsingNativeUI
         {
-            get
-            {
-                return is_using_native_ui;
-            }
+            get;
+            set;
         }
-
-        protected bool is_using_native_ui = false;
 
         protected void ShowErrorForNativeUI(string v)
         {
