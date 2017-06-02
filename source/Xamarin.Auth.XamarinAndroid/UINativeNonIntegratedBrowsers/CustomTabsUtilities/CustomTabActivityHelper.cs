@@ -59,7 +59,7 @@ namespace Android.Support.CustomTabs.Chromium.SharedUtilities
 					fallback.OpenUri(activity, uri);
 				}
 			}
-			//else
+			else
 			{
 				custom_tabs_intent.Intent.SetPackage(packageName);
 				custom_tabs_intent.LaunchUrl(activity, uri);

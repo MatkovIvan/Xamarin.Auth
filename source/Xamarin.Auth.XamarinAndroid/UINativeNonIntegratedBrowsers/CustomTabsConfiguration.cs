@@ -186,9 +186,9 @@ namespace Xamarin.Auth
 
         public static WebViewFallback WebViewFallback
         {
-        	get;
-        	set;
-        }
+            get;
+            set;
+        } = new WebViewFallback();
 
         public static bool IsWarmUpUsed
         {

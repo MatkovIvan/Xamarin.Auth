@@ -15,7 +15,6 @@
 using Android.App;
 using Android.Content;
 using Android.Net;
-using Android.Support.CustomTabs.Chromium.SharedUtilities;
 
 namespace Android.Support.CustomTabs.Chromium.SharedUtilities
 {
@@ -27,9 +26,9 @@ namespace Android.Support.CustomTabs.Chromium.SharedUtilities
 	{
 		public void OpenUri(Activity activity, Uri uri)
 		{
-			Intent intent = new Intent(activity, typeof(Xamarin.Auth.WebViewActivity));
-			intent.PutExtra(Xamarin.Auth.WebViewActivity.EXTRA_URL, uri.ToString());
-			activity.StartActivity(intent);
+            Intent intent = new Intent(Intent.ActionView);
+            intent.SetData(uri);
+            activity.StartActivity(intent);
 
             return;
 		}
