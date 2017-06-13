@@ -122,7 +122,7 @@ namespace Xamarin.Auth
         {
         	get;
         	set;
-        } = "Menu Item Title";
+        }
 
         public static global::Android.Graphics.Color ToolbarColor
         {
@@ -134,19 +134,19 @@ namespace Xamarin.Auth
         {
         	get;
         	set;
-        }  = true;
+        } = false;
 
         public static bool IsUrlBarHidingUsed
         {
         	get;
         	set;
-        }  = true;
+        } = true;
 
         public static bool IsDefaultShareMenuItemUsed
         {
         	get;
         	set;
-        }  = true;
+        } = false;
 
         public static global::Android.Graphics.Bitmap ActionButtonIconBitmap
         {
@@ -158,13 +158,13 @@ namespace Xamarin.Auth
         {
         	get;
         	set;
-        }  = true;
+        } = false;
 
         public static bool IsActionBarToolbarIconUsed
         {
         	get;
         	set;
-        }  = true;
+        } = false;
 
         public static global::Android.Graphics.Bitmap ActionBarToolbarIconBitmap
         {
