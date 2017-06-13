@@ -15,27 +15,23 @@
 //
 using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-using Android.OS;
 using Android.App;
-using Android.Net.Http;
-using Android.Webkit;
+using Android.Content;
+using Android.Content.PM;
+using Android.OS;
 
 using Xamarin.Utilities.Android;
-using Android.Support.CustomTabs;
-using System.Runtime.Remoting.Contexts;
-using System.Linq;
-using Plugin.Threading;
-using Android.Widget;
 
 namespace Xamarin.Auth
 {
     [Activity
         (
             Label = "Web Authenticator Native Broswer",
-            LaunchMode = global::Android.Content.PM.LaunchMode.SingleTop
+            LaunchMode = LaunchMode.SingleTop
         )
     ]
     public partial class WebAuthenticatorNativeBrowserActivity : global::Android.Accounts.AccountAuthenticatorActivity
@@ -165,6 +161,11 @@ namespace Xamarin.Auth
             sb.AppendLine($"      CloseCustomTabs");
             System.Diagnostics.Debug.WriteLine(sb.ToString());
             #endif
+            
+            // Close activities on top of it
+            var intent = new Intent(Intent);
+            intent.SetFlags(ActivityFlags.ClearTop);
+            StartActivity(intent);
 
             this.Finish();
             //this.CloseCustomTabsProcessKill();
